@@ -1,0 +1,24 @@
+/* Link for color scheme: https://colorhunt.co/palette/191957
+ * If you are too lazy to load the link: #f4f6ff #ffcb74 #ea907a #4f8a8b
+ */
+body {
+  background-color: #f4f6ff;
+}
+
+hr {
+  border-style: none;
+  /*More specific attribute overrides general*/
+  border-top-style: dotted;
+  border-color: grey;
+  /*Affecting the "size" of the dots*/
+  border-width: 5px;
+  width: 5%;
+}
+
+h1 {
+  color: #4f8a8b;
+}
+
+h3 {
+  color: #ea907a;
+}
