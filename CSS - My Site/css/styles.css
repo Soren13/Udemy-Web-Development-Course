@@ -1,12 +1,60 @@
+/*
+font-family: 'Italianno', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+/*
+Font Properties Challenge 1:
+  a) Set the text color for the h1 and h2 to both be
+     the color with hex code: #66bfbf
+  b) Set the text color for the h3 and anchor tag to
+     be the color with hex code: #11999e
+
+Font Properties Challenge 2:
+  Change the "a programmer" subtitle to font weight: normal
+  Answer done in form of <span> in HTML file
+    ->  <span style="font-weight: normal">a programmer</span>
+
+Font Properties Challenge 3:
+  Change the line height to double what it currently is
+*/
 body {
   background-color: gray;
   margin: 0;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  /*Challenge 3*
+  line-height: 2;*/
 }
+
 h1 {
-  /*margin-block-start: 0;*/
-  margin-top: 0;
+  margin: 50px auto 0 auto;
+  font-family: 'Italianno', cursive;
+  font-size: 5.625rem;
+  /*Challenge 1a*
+  color: #66bfbf;*/
 }
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  /*Challenge 1a*
+  color: #66bfbf;
+  /*Challenge 2*
+  font-weight: normal;*/
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  /*Challenge 1b*
+  color: #11999e;*/
+}
+
+/*Challenge 1b*
+a {
+  color: #11999e;
+}*/
+
 .top-cloud {
   position: absolute;
   right: 300px;
@@ -20,19 +68,11 @@ h1 {
 }
 
 .top-container {
-  background-color: violet;
+  /*background-color: violet;*/
   padding-top: 100px;
   position: relative;
 }
 
-.middle-container {
-  background-color: red;
-  height: 200px;
-  width: 200px;
-}
+.middle-container {}
 
-.bottom-container {
-  background-color: blue;
-  height: 200px;
-  width: 200px;
-}
+.bottom-container {}
