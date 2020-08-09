@@ -21,8 +21,7 @@ Font Properties Challenge 3:
   Change the line height to double what it currently is
 */
 body {
-  background-color: #8adfdc;
-  color: #313848;
+  color: #40514e;
   margin: 0;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -34,33 +33,40 @@ h1 {
   margin: 50px auto 0 auto;
   font-family: 'Italianno', cursive;
   font-size: 5.625rem;
-  /*Challenge 1a*
-  color: #66bfbf;*/
+  /*Challenge 1a*/
+  color: #66bfbf;
 }
 
 h2 {
-  color: #735372;
   font-family: 'Open Sans', sans-serif;
   font-size: 2.5rem;
-  font-weight: normal;
-  /*Challenge 1a*
+  /*Challenge 1a*/
   color: #66bfbf;
-  /*Challenge 2*
-  font-weight: normal;*/
+  /*Challenge 2*/
+  font-weight: normal;
 }
 
 h3 {
   font-family: 'Open Sans', sans-serif;
-  /*Challenge 1b*
-  color: #11999e;*/
+  /*Challenge 1b*/
+  color: #11999e;
 }
 
 hr {
   border-style: none;
   border-top-style: dotted;
   border-width: 5px;
-  color: gray;
+  color: #eaf6f6;
   width: 5%;
+}
+
+/*Challenge 1b*/
+a {
+  color: #11999e;
+}
+
+a:hover {
+  color: #eaf6f6;
 }
 
 .footer-link {
@@ -68,7 +74,7 @@ hr {
 }
 
 .top-container {
-  /*background-color: violet;*/
+  background-color: #eaf6f6;
   padding-top: 100px;
   position: relative;
 }
@@ -76,10 +82,15 @@ hr {
 .middle-container {
   margin: 100px auto;
 }
-/* TODO: fix to not show the background color of body */
+
 .bottom-container {
-  background-color: #8f758e;
-  margin: 50px;
+  background-color: #66bfbf;
+  padding: 50px;
+}
+
+.bottom-container p {
+  margin-top: 50px;
+  display: inline-block;
 }
 
 .profile {
@@ -88,6 +99,7 @@ hr {
 }
 
 .skill-row {
+  line-height: 2;
   margin: 100px auto;
   text-align: left;
   width: 50%;
@@ -121,7 +133,11 @@ hr {
   margin-left: 30px;
   width: 25%;
 }
-/* TODO: change color of button gradient to appropriate color scheme */
+
+.not-top-img {
+  border-radius: 100%;
+}
+
 .BUTTON_BUJ {
   background: #3D94F6;
   background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
@@ -162,7 +178,7 @@ hr {
   border-radius: 10px;
   text-decoration: none;
 }
-/* TODO: change color of info */
+
 .copyright-info {
   color: #eaf6f6;
   font-size: 0.75rem;
