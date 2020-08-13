@@ -12,15 +12,17 @@ h1 {
   line-height: 1.5;
 }
 
-/* Class Selectors */
-.container-fluid {
-  padding: 3% 15%;
+p {
+  color: #8f8f8f;
 }
 
-.title_pic {
-  transform: rotate(25deg);
-  width: 60%;
-  /* transform: scaleX(0.5) rotate(30deg); */
+#title {
+  background-color: #ff4c68;
+  color: white;
+}
+
+.container-fluid {
+  padding: 3% 15%;
 }
 
 /* Navigation Bar Specific Seclectors */
@@ -43,13 +45,40 @@ h1 {
   font-weight: lighter;
 }
 
-/* Download Buttons */
+/* Download Buttons specifically those in the Title section*/
 .download_button {
   margin: 5% 3% 5% 0;
 }
 
-/* ID Selectors */
-#title {
-  background-color: #ff4c68;
-  color: white;
+.title_pic {
+  transform: rotate(25deg);
+  width: 60%;
+  /* transform: scaleX(0.5) rotate(30deg); */
+}
+
+#features {
+  padding: 7% 15%;
+}
+
+.features_box {
+  padding: 5%;
+text-align: center;
+}
+
+/* h3 in Features; may take out in refactoring if unnecessary
+Angela wrote it in as h3 */
+.features_heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* REVIEW: Is there a way to combine icon and icon:hover? */
+.features_icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.features_icon:hover {
+  color: #ff4c68;
 }
