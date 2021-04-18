@@ -36,7 +36,7 @@ p {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* Navigation Bar Specific Seclectors */
@@ -65,13 +65,18 @@ p {
 }
 
 .title_pic {
+  right: 30%;
   transform: rotate(25deg);
   width: 60%;
+  position: absolute;
   /* transform: scaleX(0.5) rotate(30deg); */
 }
 
 #features {
+  background-color: #ffffff;
   padding: 7% 15%;
+  position: relative;
+  /* z-index: 1; */
 }
 
 .features_box {
@@ -115,4 +120,13 @@ p {
 .press_logo {
   margin: 20px 20px 50px;
   width: 15%;
+}
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
 }
