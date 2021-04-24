@@ -1,42 +1,45 @@
 /* font-family: 'Montserrat', sans-serif;
    font-family: 'Ubuntu', sans-serif; */
-/* Tag Selectors */
+/* TAG SELECTORS */
 body {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 900;
-  line-height: 1.5;
-}
-
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1.5;
-}
-
-h3 {
-  /* Also called .features_heading */
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 p {
   color: #8f8f8f;
 }
 
-#title {
-  background-color: #ff4c68;
-  color: white;
+/* HEADING SELECTORS */
+.big_heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
 }
 
+.section_heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* SECTIONS: COLORED OR NOT */
+.colored_section {
+  background-color: #ff4c68;
+  color: #ffffff;
+}
+
+.white_section {
+  background-color: #ffffff;
+}
+
+/* CONTAINERS */
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
 }
 
 /* Navigation Bar Specific Seclectors */
@@ -59,9 +62,17 @@ p {
   font-weight: lighter;
 }
 
-/* Download Buttons specifically those in the Title section*/
 .download_button {
   margin: 5% 3% 5% 0;
+}
+
+#title {
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
 }
 
 .title_pic {
@@ -72,16 +83,25 @@ p {
   /* transform: scaleX(0.5) rotate(30deg); */
 }
 
+/* For when the width of the viewport gets smaller than a tablet size */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title_pic {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
 #features {
-  background-color: #ffffff;
-  padding: 7% 15%;
   position: relative;
   /* z-index: 1; */
 }
 
 .features_box {
   padding: 5%;
-  text-align: center;
 }
 
 /* REVIEW: Is there a way to combine icon and icon:hover? */
@@ -94,11 +114,12 @@ p {
   color: #ff4c68;
 }
 
+.features_title {
+  font-size: 1.5rem;
+}
+
 #testimonials {
   background-color: #ef8172;
-  color: white;
-  /* padding: 7% 15%; */
-  text-align: center;
 }
 
 .testimonial_image {
@@ -107,14 +128,14 @@ p {
   width: 10%;
 }
 
-.carousel-item {
-  padding: 7% 15%;
+.testimonial_text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 #press {
   background-color: #ef8172;
   padding-bottom: 3%;
-  text-align: center;
 }
 
 .press_logo {
@@ -124,9 +145,19 @@ p {
 
 #pricing {
   padding: 100px;
-  text-align: center;
+}
+
+.price_text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+/* CTA SELECTORS */
+/* FOOTER SELECTORS */
+.footer_icon {
+  margin: 20px 10px;
 }
